@@ -32,3 +32,13 @@ Welcome to Hospital Guide app. The app is designed to provide a convenient way t
 ### Businessman
 
 ​	According to consumer demand, can be appropriate advertising placement. It provides a stable guidance platform for hospitals through APP operation and maintenance, and charges certain fees
+
+### Organization Structure
+
+![image-20230331214328390](README.assets/image-20230331214328390.png)	
+
+Our company has 4 members , they are from School of  Aberdeen Data Science and Artificial Intelligence, South China Normal University
+
+- **Senior manager:**Hua Yi Lai
+- **Developer:**BoNan Mai、YinYi Liu
+- **Project manager:**PeiBin Zheng
