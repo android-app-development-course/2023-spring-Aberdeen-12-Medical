@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFF2F2">
+
+    <ImageView
+        android:id="@+id/userLogo"
+        android:layout_width="85dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="159dp"
+        android:layout_height="25dp"
+        android:textSize="20dp"
+        android:textColor="@color/font_color"
+        android:layout_marginStart="36dp"
+        android:text="user name"
+        app:layout_constraintBottom_toBottomOf="@+id/userLogo"
+        app:layout_constraintStart_toEndOf="@+id/userLogo"
+        app:layout_constraintTop_toTopOf="@+id/userLogo"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <View
+        android:id="@+id/selectView_me"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selectView_me" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="360dp"
+        android:layout_height="87dp"
+        android:text="TextView"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:textSize="22dp"
+        android:textColor="@color/font_color"
+        android:background="@color/green_main"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="360dp"
+        android:layout_height="87dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:textSize="22dp"
+        android:textColor="@color/font_color"
+        android:background="@color/green_main"
+        android:layout_marginEnd="1dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/half_circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view5">
+
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
