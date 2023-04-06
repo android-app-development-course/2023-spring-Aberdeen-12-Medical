@@ -14,14 +14,15 @@ class InitDatabase extends SQLiteOpenHelper {
     //创建数据库 这两个函数在数据库被创造之初，的时候都会被调用
     public void onCreate(SQLiteDatabase db){
         //创建密码表  user
-        db.execSQL("create table user (userAccont varchar(50), userPassword varchar(50))");
+        db.execSQL("create table if not exists user (userAccount varchar(50), userPassword varchar(50))");
+        db.execSQL("create table if not exists doctor (doctorAccount varchar(50), doctorPassword varchar(50))");
     }
     //数据库版本更新
     public void onUpgrade(SQLiteDatabase db,int oldVersion,int newVersion)
     {
         db.execSQL("drop table if exists user");
+        db.execSQL("drop table if exists doctor");
         onCreate(db);
     }
-
 
 }

@@ -35,15 +35,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <TextView
         android:id="@+id/account_log_in_Alert"
         android:layout_width="305dp"
         android:layout_height="24dp"
         android:layout_marginTop="3dp"
-        android:layout_marginBottom="476dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account_log_in" />
@@ -61,15 +59,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.415" />
 
     <TextView
         android:id="@+id/password_log_in_Alert"
         android:layout_width="305dp"
         android:layout_height="24dp"
         android:layout_marginTop="1dp"
-        android:layout_marginBottom="372dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_log_in" />
@@ -84,7 +80,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.69" />
 
     <TextView
         android:id="@+id/textView"
@@ -109,6 +105,19 @@
         android:textColor="@color/font_color"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/isDoctor_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是医生"
+        android:textColor="@color/font_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

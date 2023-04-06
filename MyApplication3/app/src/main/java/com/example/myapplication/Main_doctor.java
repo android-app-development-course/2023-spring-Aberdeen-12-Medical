@@ -1,44 +1,44 @@
 package com.example.myapplication;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class me extends AppCompatActivity {
-    @SuppressLint("ResourceAsColor")
-    @Override
+public class Main_doctor extends AppCompatActivity {
+    public static String accountDoctor = null;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.me);
-
-        ImageView userView = (ImageView) findViewById(R.id.userLogo);
-        userView.setImageResource(R.drawable.user_logo);
+        setContentView(R.layout.main_doctor);
 
 
-//        底部tag栏事件
+        Intent intent =  getIntent();
+        accountDoctor = intent.getStringExtra("account");
+        System.out.println(accountDoctor);
+
+
+        //        底部tag栏事件
 
         findViewById(R.id.tagLayout1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(me.this,log_in.class));
+                startActivity(new Intent(Main_doctor.this,Main_doctor.class));
                 System.out.println("第一个");
             }
         });
         findViewById(R.id.tagLayout2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(me.this, Main_user.class));
+                startActivity(new Intent(Main_doctor.this,add_plan.class));
                 System.out.println("第二个");
             }
         });
         findViewById(R.id.tagLayout3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(me.this,me.class));
+                startActivity(new Intent(Main_doctor.this,hospital.class));
                 System.out.println("第三个");
             }
         });

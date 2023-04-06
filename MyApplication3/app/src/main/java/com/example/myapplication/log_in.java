@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class log_in extends AppCompatActivity {
 
@@ -31,7 +33,6 @@ public class log_in extends AppCompatActivity {
         return encodeStr;
     }
 
-
     private static String byte2Hex(byte[] bytes) {
         StringBuilder stringBuilder = new StringBuilder();
         String temp;
@@ -46,21 +47,24 @@ public class log_in extends AppCompatActivity {
         return stringBuilder.toString();
     }
 
-
-
-
     InitDatabase initDatabase = new InitDatabase(this);
-    private Boolean check(String account, String password){
-
-
+    private Boolean check(String identity, String account, String password){
         ArrayList<String> userData = new ArrayList<>();
         SQLiteDatabase database = initDatabase.getReadableDatabase();  // 这是一个对数据库操作的对象
-        Cursor cursor = database.query("user",null, null, null, null, null, null);
+        Cursor cursor = database.query(identity,null, null, null, null, null, null);
         while (cursor.moveToNext()) {
-            if (cursor.getColumnIndex("userAccount")>=0 && cursor.getColumnIndex("userPassword")>=0){
-                @SuppressLint("Range") String userAccount = cursor.getString(cursor.getColumnIndex("userAccount"));
-                @SuppressLint("Range") String userPassword = cursor.getString(cursor.getColumnIndex("userPassword"));
-                userData.add(userAccount + userPassword);
+            if (Objects.equals(identity, "user")){
+                if (cursor.getColumnIndex("userAccount")>=0 && cursor.getColumnIndex("userPassword")>=0){
+                    @SuppressLint("Range") String userAccount = cursor.getString(cursor.getColumnIndex("userAccount"));
+                    @SuppressLint("Range") String userPassword = cursor.getString(cursor.getColumnIndex("userPassword"));
+                    userData.add(userAccount + userPassword);
+                }
+            }else if (Objects.equals(identity, "doctor")){
+                if (cursor.getColumnIndex("doctorAccount")>=0 && cursor.getColumnIndex("doctorPassword")>=0){
+                    @SuppressLint("Range") String userAccount = cursor.getString(cursor.getColumnIndex("doctorAccount"));
+                    @SuppressLint("Range") String userPassword = cursor.getString(cursor.getColumnIndex("doctorPassword"));
+                    userData.add(userAccount + userPassword);
+                }
             }
         }
 
@@ -77,14 +81,30 @@ public class log_in extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
 
+        final CheckBox isDoctor = findViewById(R.id.isDoctor_log_in);
+
 
         findViewById(R.id.log_in).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 EditText account = findViewById(R.id.account_log_in);
                 EditText password = findViewById(R.id.password_log_in);
-                if (check(String.valueOf(account.getText()),String.valueOf(password.getText()))){
-                    System.out.println("------------------行-----------------------------------------------------------------");
+                if (isDoctor.isChecked()){
+                    if (check("doctor" ,String.valueOf(account.getText()),String.valueOf(password.getText()))) {
+                        Intent intent = new Intent(log_in.this, Main_doctor.class);
+                        intent.putExtra("account",String.valueOf(account.getText()));
+                        startActivity(intent);
+                    }else {
+                        System.out.println("医生密码错误");
+                    }
+                }else {
+                    if (check("user" ,String.valueOf(account.getText()),String.valueOf(password.getText()))) {
+                        Intent intent = new Intent(log_in.this,Main_user.class);
+                        intent.putExtra("account",String.valueOf(account.getText()));
+                        startActivity(intent);
+                    }else {
+                        System.out.println("密码错误");
+                    }
                 }
             }
         });

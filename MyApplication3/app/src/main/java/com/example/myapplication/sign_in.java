@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -36,21 +37,27 @@ public class sign_in extends AppCompatActivity {
         //testStr被检测的文本
         Matcher matcher = pattern.matcher(account);
 
-        ArrayList<String> userData = new ArrayList<>();
+        ArrayList<String> accounts = new ArrayList<>();
         SQLiteDatabase database = initDatabase.getReadableDatabase();  // 这是一个对数据库操作的对象
         Cursor cursor = database.query("user",null, null, null, null, null, null);
         while (cursor.moveToNext()) {
             if (cursor.getColumnIndex("userAccount")>=0 && cursor.getColumnIndex("userPassword")>=0){
                 @SuppressLint("Range") String userAccount = cursor.getString(cursor.getColumnIndex("userAccount"));
-                userData.add(userAccount);
+                accounts.add(userAccount);
+            }
+        }
+        cursor = database.query("doctor",null, null, null, null, null, null);
+        while (cursor.moveToNext()) {
+            if (cursor.getColumnIndex("doctorAccount")>=0 && cursor.getColumnIndex("doctorPassword")>=0){
+                @SuppressLint("Range") String doctorAccount = cursor.getString(cursor.getColumnIndex("doctorAccount"));
+                accounts.add(doctorAccount);
             }
         }
 
         cursor.close();
         database.close();
 
-
-        return matcher.matches() && account.length()<=16 && account.length()>= 8 && !userData.contains(account);
+        return matcher.matches() && account.length()<=16 && account.length()>= 8 && !accounts.contains(account);
     }
 
     private Boolean checkPassword(String password){
@@ -60,7 +67,6 @@ public class sign_in extends AppCompatActivity {
     private Boolean checkPasswordAgain(String password, String passwordAgain){
         return Objects.equals(password, passwordAgain) && passwordAgain.length()>=8 && passwordAgain.length() <= 16;
     }
-
 
 
 // 我这里写了一个加密 加密用户的密码
@@ -76,7 +82,6 @@ public class sign_in extends AppCompatActivity {
         }
         return encodeStr;
     }
-
 
     private static String byte2Hex(byte[] bytes) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -113,14 +118,10 @@ private void showAlertDialog(String title, String content, Boolean success) {
     dialog.show();
     dialog.getButton(DialogInterface.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.font_color));
 
-
 }
 
 
 // 提示弹窗结束
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,6 +194,28 @@ private void showAlertDialog(String title, String content, Boolean success) {
             }
         });
 
+        final EditText code = findViewById(R.id.verificationCode_sign_in);
+        final TextView codeAlert = findViewById(R.id.verificationCode_sign_in_alert);
+        final CheckBox isDoctor = findViewById(R.id.isDoctor_sign_in);
+        code.setVisibility(View.GONE);
+        codeAlert.setVisibility(View.GONE);
+
+        findViewById(R.id.isDoctor_sign_in).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isDoctor.isChecked()){
+                    code.setVisibility(View.VISIBLE);
+                    codeAlert.setVisibility(View.VISIBLE);
+                    System.out.println("-------拉勾勾---------");
+                }else {
+                    code.setVisibility(View.GONE);
+                    codeAlert.setVisibility(View.GONE);
+                    System.out.println("-------不拉勾勾---------");
+                }
+            }
+        });
+
+
         findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -204,14 +227,22 @@ private void showAlertDialog(String title, String content, Boolean success) {
                 EditText account = findViewById(R.id.account_sign_in);
                 EditText password = findViewById(R.id.password_sign_in);
 
-                if (checkAccount && checkPassword && checkPasswordAgain){
-                    System.out.println("-----------123---------------------ok---------------");
-                    SQLiteDatabase database = initDatabase.getWritableDatabase();  // 这是一个对数据库操作的对象
-                    database.execSQL("insert into user (userAccount, userPassword) values ('"+String.valueOf(account.getText())+"','"+getSha256(String.valueOf(password.getText()))+"')");
-                    showAlertDialog("成功", "注册账号成功", true);
-                }else showAlertDialog("失败", "注册账号失败请检查输入的账号和密码",false);
+                if (checkAccount && checkPassword && checkPasswordAgain) {
+                    if (isDoctor.isChecked()) {
+                        if (String.valueOf(code.getText()).equals("seele")){
+                            System.out.println("-----------123---------------------ok---------------");
+                            SQLiteDatabase database = initDatabase.getWritableDatabase();  // 这是一个对数据库操作的对象
+                            database.execSQL("insert into doctor (doctorAccount, doctorPassword) values ('" + String.valueOf(account.getText()) + "','" + getSha256(String.valueOf(password.getText())) + "')");
+                            showAlertDialog("成功", "注册医生账号成功", true);
+                        }else showAlertDialog("失败", "邀请码错误",false);
+                    } else {
+                        System.out.println("-----------123---------------------ok---------------");
+                        SQLiteDatabase database = initDatabase.getWritableDatabase();  // 这是一个对数据库操作的对象
+                        database.execSQL("insert into user (userAccount, userPassword) values ('" + String.valueOf(account.getText()) + "','" + getSha256(String.valueOf(password.getText())) + "')");
+                        showAlertDialog("成功", "注册用户账号成功", true);
+                    }
 
-
+                }else showAlertDialog("失败", "注册账号失败请检查输入的账号和密码", false);
             }
         });
 
