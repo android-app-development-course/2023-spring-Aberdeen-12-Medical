@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_exit.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\exit.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_abeidduo.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\abeidduo.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_main_dark.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\main_dark.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_wanye.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\wanye.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_me_highlight.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\me_highlight.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_red_cross.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\red_cross.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_user_logo.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\user_logo.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_hospital_content.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\hospital_content.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_nuoaier.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\nuoaier.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_main_doctor.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\main_doctor.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_me.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\me.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-25:/layout_add_plan.xml.flat",
+        "source": "com.example.myapplication.app-main-27:/layout/add_plan.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_mona.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\mona.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_hospital_dark.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\hospital_dark.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_activity_main.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_history.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\history.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_main_user.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\main_user.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_heita.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\heita.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_slidetest.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\slidetest.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_half_circle_shape.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\half_circle_shape.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_fengyuanwanye.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\fengyuanwanye.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_exhabit.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\exhabit.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_hospital_highlight.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\hospital_highlight.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_add_plan.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\add_plan.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_main_highlight.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\main_highlight.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_edit_background.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\edit_background.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_manage_dark.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\manage_dark.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_sign_in.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\sign_in.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\xml_data_extraction_rules.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_log_in.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\log_in.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\xml_backup_rules.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\layout_hospital.xml.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\layout\\hospital.xml"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_nilu.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\nilu.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_mei.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\mei.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_me_dark.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\me_dark.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_add.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\add.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_manage_highlight.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\manage_highlight.png"
+    },
+    {
+        "merged": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-25:\\drawable_guizhong.png.flat",
+        "source": "D:\\Android studio\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-27:\\drawable\\guizhong.png"
+    }
+]
