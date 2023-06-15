@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+
+    <TextView
+        android:id="@+id/textView_log_in"
+        android:layout_width="135dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="@color/font_color"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_layout_log_in"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:drawableStart="@drawable/custom_person"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/account_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:hint="  Type your Account"
+        android:inputType="text" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/account_log_in_Alert"
+        android:layout_width="305dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_layout_log_in" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout_log_in"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:drawableStart="@drawable/custom_lock"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:hint="  Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password_log_in_Alert"
+        android:layout_width="305dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_layout_log_in" />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="log in"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="没有账号？点击注册"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <TextView
+        android:id="@+id/textView_turn_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="sign in"
+        android:textColor="@color/font_color"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/isDoctor_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是医生"
+        android:textColor="@color/font_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

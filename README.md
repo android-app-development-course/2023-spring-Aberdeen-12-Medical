@@ -1,7 +1,9 @@
 # 2023-spring-Aberdeen-4-Medical
 2023移动智能应用开发项目
 
+# How to run the apk file?
 
+由于不同手机数据库不同，请按照视频中的方式创建医院账户，进行攻略发布，路线发布等操作后再创建患者账户或直接在主页面查看医院攻略数据
 
 # Introduction
 

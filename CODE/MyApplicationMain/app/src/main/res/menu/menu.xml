@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home_"
+        android:title="Home"
+        android:icon="@drawable/home_dark"/>
+
+    <item android:id="@+id/communication_"
+        android:title="Chat"
+        android:icon="@drawable/communicate_dark"/>
+
+    <item android:id="@+id/me_"
+        android:title="Me"
+        android:icon="@drawable/me_dark"/>
+</menu>

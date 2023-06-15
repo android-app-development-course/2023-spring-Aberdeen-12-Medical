@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="RESET \n Information Detail of Hospital"
+        android:textSize="24dp"
+        android:textColor="@color/font_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resetTitleLayout"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="112dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/custom_person"
+            android:hint="  Title"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resetAddressLayout"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintStart_toStartOf="@+id/resetTitleLayout"
+        app:layout_constraintTop_toBottomOf="@+id/resetTitleLayout" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resetAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/custom_person"
+            android:hint="  Address"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resetPhoneLayout"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintStart_toStartOf="@+id/resetAddressLayout"
+        app:layout_constraintTop_toBottomOf="@+id/resetAddressLayout" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resetPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/custom_person"
+            android:hint="  Phone number"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resetOfficialLayout"
+        style="@style/MyInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/font_color"
+        app:layout_constraintStart_toStartOf="@+id/resetPhoneLayout"
+        app:layout_constraintTop_toBottomOf="@+id/resetPhoneLayout" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resetOfficial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/custom_person"
+            android:hint="  Official"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

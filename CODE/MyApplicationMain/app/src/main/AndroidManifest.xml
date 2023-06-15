@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 添加获取本地图片的方法 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllHospital"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplicationNoBar"
+            android:label="All Hospitals"/>
+        <activity
+            android:name=".ContentHospital"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplicationNoBar" />
+        <activity
+            android:name=".ManagementHospital"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainHospital"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false"
+            android:parentActivityName=".LogIn" />
+        <activity
+            android:name=".AddPlan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainCommunication"
+            android:exported="false" />
+        <activity
+            android:name=".EmptyPage"
+            android:theme="@style/Theme.MyApplicationNoBar"
+            android:exported="false" />
+        <activity
+            android:name=".Reset"
+            android:exported="false"
+            android:parentActivityName=".MainHospital" />
+    </application>
+
+</manifest>
